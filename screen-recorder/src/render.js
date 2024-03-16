@@ -3,7 +3,9 @@ const { desktopCapturer, remote } = require('electron');
 
 const { writeFile } = require('fs');
 
-const { dialog, Menu } = remote;
+const { dialog } = require('@electron/remote');
+
+// rest of your code
 
 // Global state
 let mediaRecorder; // MediaRecorder instance to capture footage
